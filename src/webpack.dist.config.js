@@ -8,9 +8,9 @@ import gulpOptionsBuilder from './gulp-options-builder';
 const options = gulpOptionsBuilder();
 
 const env = deepAssign({
-  __DEV_MODE__: false,
-  NODE_ENV: '"production"',
-  'process.env.NODE_ENV': '"production"'
+  __DEV_MODE__: true,
+  NODE_ENV: '"test"',
+  'process.env.NODE_ENV': '"test"'
 }, options.env);
 
 const config = {...options.webpack};
